@@ -140,7 +140,7 @@ export default function MusicPlayer({
             Favorite Music
           </h1>
           <p className="text-indigo-200 text-xl">
-            Aku memilih lagu ini karena bingung mau memilih lagu apa
+            Aku milih lagu ini karena bingung mau milih lagu apa. hehehe
           </p>
         </motion.div>
 
