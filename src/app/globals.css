@@ -1,26 +1,67 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* @tailwind base; */
+@tailwind utilities;
+@tailwind utilities;
 
+/* 🎨 Warna tema */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg-light: #ffffff;
+  --color-bg-accent: #fdf4ff; /* lavender muda */
+  --color-bg-gradient: linear-gradient(180deg, #fdf4ff 0%, #fef9f9 100%);
+  --color-text-main: #4b286d; /* ungu tua lembut */
+  /* --color-text-accent: #d946ef; pink keunguan */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-bg-light: #1a1a1a;
+    --color-bg-accent: #2d1b3d;
+    --color-bg-gradient: linear-gradient(180deg, #2d1b3d 0%, #1a1a1a 100%);
+    --color-text-main: #f3e8ff;
+    /* --color-text-accent: #f0abfc; */
   }
 }
 
+/* 🌸 Font cantik */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg-gradient);
+  color: var(--color-text-main);
+  font-family: var(--font-sans), sans-serif;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* 🎀 Judul */
+h1,
+h2,
+h3 {
+  font-family: var(--font-display), serif;
+  font-weight: 700;
+  color: var(--color-text-accent);
+}
+
+/* 📦 Card style */
+.card {
+  background: var(--color-bg-light);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+.elegant-button:hover {
+  background-color: rgba(224, 215, 245, 0.15);
+  color: #e0d7f5;
+}
+/* styles/globals.css */
+.bg-grid {
+  background-image: linear-gradient(
+      rgba(224, 176, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(224, 176, 255, 0.1) 1px, transparent 1px);
 }

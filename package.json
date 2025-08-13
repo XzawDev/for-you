@@ -1,5 +1,5 @@
 {
-  "name": "birthday2-website",
+  "name": "for-you",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,19 +9,34 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@splinetool/react-spline": "^4.1.0",
+    "@splinetool/runtime": "^1.10.44",
+    "canvas-confetti": "^1.9.3",
+    "framer-motion": "^12.23.12",
+    "gsap": "^3.13.0",
+    "lottie-react": "^2.4.1",
+    "motion": "^12.23.12",
+    "next": "15.4.6",
+    "ogl": "^1.0.11",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.4.6"
+    "react-icons": "^5.5.0",
+    "react-tsparticles": "^2.12.2",
+    "react-type-animation": "^3.2.0",
+    "three": "^0.179.1",
+    "tsparticles": "^3.9.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/canvas-confetti": "^1.9.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
+    "@types/three": "^0.179.0",
     "eslint": "^9",
     "eslint-config-next": "15.4.6",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
